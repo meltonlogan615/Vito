@@ -4,7 +4,64 @@
   --primary-text-color: rgb(164, 164, 164);
   --hover-state: rgb(245, 245, 245);
 }
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    position: sticky;
+  }
+  .top-nav  {
+    display: none;
+  }
+  .logo {
+    width: 100vw;
+    text-align: center;
+    font-size: 1.5rem
+  }
+  .cta-btn {
+    align-self: center;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+  }
+  .about-top {
+    display: inline-flex;
+    justify-content: space-evenly;
 
+    border: 1px solid black;
+  }
+  .leaning-img {
+    width: 50%;
+    display: inline-flex;
+    object-fit: fill;
+    border: 1px solid black;
+  }
+  p {
+    border: 1px solid black;
+    padding: 0.5rem;
+  }
+
+  .first-text {
+    width: 50%;
+    display: block;
+    align-content: flex-end;
+  }
+  
+  .self-mastery {
+    width: 50%;
+  }
+  .book-img {
+    width: 50%;
+  }
+
+}
+
+/* Media Queries for Small Screens */
+@media (min-width: 769px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+}
 html {
   background: var(--primary-color);
   color: var(--primary-text-color);
@@ -12,9 +69,13 @@ html {
   font-family: sans-serif;
 }
 
+/* All Purpose CSS */
+
 header {
   display: flex;
-  border: 1px solid goldenrod;
+  position: sticky;
+  margin-bottom: 1px solid black;
+
 }
 
 a {
@@ -22,33 +83,25 @@ a {
   color: var(--primary-text-color);
 }
 .top-nav {
-  border: 1px solid red;
   width: 70vw;
 }
-.logo {
-  border: 1px solid green;
-  width: 25%;
-  font-size: 1.25rem;
-  align-self: center;
-}
 
-.top-nav ul {
-  border: 1px solid purple;
+.logo {
+
+  align-self: center;
 }
 
 .top-nav ul li {
   text-decoration: none;
   display: inline;
   margin-left: 0.75rem;
-  border: 1px solid red;
-  margin-right;
+  padding: 0.5rem;
+  margin-right: 0;
 }
 
 li:hover {
   text-decoration: none;
-  font-size: 1.1rem;
-  transition-timing-function: ease-in-out;
-  transition-duration: 200ms;
+  border-bottom: 1px solid black;
 }
 
 li:visited {
@@ -58,18 +111,15 @@ li:visited {
 h3 {
   color: var(--secondary-brand-color);
   text-align: center;
-  border: 1px solid red;
 }
-
 
 .cta-btn {
   background: var(--secondary-brand-color);
   border-radius: 5px;
   border: 1px;
   border-color: var(--secondary-color);
-  padding: 0.75rem 1.125rem;
+  padding: 0.5rem 1rem;
   font-size: 1.125rem;
-  border: 1px solid red;
 }
 
 .cta-btn a {
@@ -81,16 +131,11 @@ h3 {
   background: var(--hover-state);
   color: var(--primary-text-color);
   transition-duration: 600ms;
+  border: none;
 }
 
-p {
-  border: 1px solid red;
-}
-
-section {
-  border: 1px solid green;
-}
-
-article{
-  border: 1px solid blue;
+.content-section {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  border-width: 90%;
 }
