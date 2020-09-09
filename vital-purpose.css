@@ -1,0 +1,96 @@
+:root {
+  --primary-color: rgb(52, 52, 52);
+  --secondary-brand-color: rgb(191, 230, 240);
+  --primary-text-color: rgb(164, 164, 164);
+  --hover-state: rgb(245, 245, 245);
+}
+
+html {
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  border: 1px solid goldenrod;
+}
+
+a {
+  text-decoration-line: none;
+  color: var(--primary-text-color);
+}
+.top-nav {
+  border: 1px solid red;
+  width: 70vw;
+}
+.logo {
+  border: 1px solid green;
+  width: 25%;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.top-nav ul {
+  border: 1px solid purple;
+}
+
+.top-nav ul li {
+  text-decoration: none;
+  display: inline;
+  margin-left: 0.75rem;
+  border: 1px solid red;
+  margin-right;
+}
+
+li:hover {
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
+
+li:visited {
+  color: black;
+}
+
+h3 {
+  color: var(--secondary-brand-color);
+  text-align: center;
+  border: 1px solid red;
+}
+
+
+.cta-btn {
+  background: var(--secondary-brand-color);
+  border-radius: 5px;
+  border: 1px;
+  border-color: var(--secondary-color);
+  padding: 0.75rem 1.125rem;
+  font-size: 1.125rem;
+  border: 1px solid red;
+}
+
+.cta-btn a {
+  font-weight: semi-bold;
+  color: black;
+}
+
+.cta-btn:hover {
+  background: var(--hover-state);
+  color: var(--primary-text-color);
+  transition-duration: 600ms;
+}
+
+p {
+  border: 1px solid red;
+}
+
+section {
+  border: 1px solid green;
+}
+
+article{
+  border: 1px solid blue;
+}
