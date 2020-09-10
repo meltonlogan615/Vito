@@ -52,6 +52,7 @@ body, html {
   padding: 4rem 2rem;
   height: 110vh;
   font-size: 1.25rem;
+  text-align: center;
   
 }
 
@@ -85,16 +86,58 @@ body, html {
 }
 
 .vital-points {
-  padding-top: 4rem;
   display: flex;
   padding: 4rem 1.5rem 3rem 1.5rem;
   border-bottom: 1px solid var(--secondary-brand-color);
 }
+@media (max-width: 768px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+  .tablink {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .clip {
+    display: none;
+  }
+  .tabcontent {
+    padding: 2rem 1rem;
+  }
+  .section-content {
+    flex-wrap: wrap;
+  }
+  .vito-img {
+    width: 65vw;
+    padding-bottom: 0.5rem;
+  }
+  .verbage {
+    padding: 0 1rem;
+  }
+  .verbage-text {
+    padding-bottom: 0rem;
+  }
+  .vital-points {
+    padding: 1rem;
+    flex-wrap: wrap;
+    order: 1;
+  }
+  
+}
+
 
 .nlp-images {
   width: 45vw;
   object-fit: contain;
   align-self: start; 
+}
+@media (max-width: 760px) {
+  .nlp-images {
+    order: 2;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
 }
 
 
@@ -145,12 +188,40 @@ body, html {
   width: 55vw;
   text-align: center; 
 }
+
+@media (max-width: 786px) {
+  .media-text {
+    width: auto;
+    order: 1;
+  }
+  .media-img-container {
+    order: 2;
+    padding: 1rem 0;
+    width: 100vw;
+    object-fit: contain;
+  }
+  .media-img {
+    width: 75vw;
+  }
+}
 .course-img-container {
   padding: 1.5rem;
   width: 50vw;
   text-align: center; 
 }
 
-.course-img-container img {
+.course-img {
   width: 30vw;
+}
+
+@media (max-width: 769px) {
+  .course-img-container {
+    width: 100vw;
+  }
+  .course-img {
+    width: 60vw;
+  }
+  .connect-img {
+    width: 70vw;
+  }
 }

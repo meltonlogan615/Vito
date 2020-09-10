@@ -1,149 +1,3 @@
-:root {
-  --primary-color: rgb(52, 52, 52);
-  --secondary-brand-color: rgb(191, 230, 240);
-  --primary-text-color: rgb(164, 164, 164);
-  --hover-state: rgb(245, 245, 245);
-}
-/* Media Queries for Small Screens */
-@media (max-width: 768px) {
-  .header {
-    background: red;
-    width: 100vw;
-  }
-
-  .top-nav  {
-    display: none;
-    position: sticky;
-    top: 0;
-  }
-
-  .logo {
-    width: 100vw;
-    text-align: center;
-    font-size: 1.5rem
-  }
-  
-  /* .about-top {
-    display: inline-flex;
-    justify-content: space-evenly;
-    border: 1px solid black;
-  }
-
-  .vito-img {
-    width: 30%;
-    height: 25%;
-    display: inline-flex;
-    border: 1px solid black;
-  }
-
-  p {
-    border: 1px solid black;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-  }
-
-  .cta-btn {
-    align-self: center;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-  }
-
-  .first-text {
-    width: 50%;
-    display: block;
-  }
-  
-  .self-mastery {
-    width: 50%;
-  }
-
-  .book-img {
-    width: 50%;
-  } */
-}
-
-
-
-/* Media Queries for Larger Screens */
-/* @media (min-width: 769px) {
-  .logo {
-    font-size: 1.75rem;
-  }
-
-  .main-points {
-    width: 36%;
-  }
-} */
-
-/* All Purpose CSS */
-
-html {
-  background: var(--primary-color);
-  color: var(--primary-text-color);
-  font-family: sans-serif;
-  width: 98%;
-}
-
-.body-content {
-  padding: 0 2.5rem;
-}
-
-/* Start CSS for Header */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2.5rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--primary-text-color);
-}
-
-.top-nav {
-  width: fit-content;
-}
-
-.logo {
-  width: fit-content;
-}
-
-.top-nav ul li {
-  display: inline;
-  margin-left: 0.75rem;
-  padding: 0.75rem;
-  
-  margin-right: 0;
-}
-
-li a:hover {
-  padding-bottom: 1rem;
-  text-decoration: none;
-  border-bottom: 1px solid black;
-  color: var(--hover-state);
-  transition-duration: 250ms;
-}
-
-li:visited {
-  color: black;
-}
-
-/* End CSS for Header */
-
-/* Start CSS for Content */
-
-.content-section {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid black;
-  border-width: 90%;
-}
-
-h3 {
-  color: var(--secondary-brand-color);
-  text-align: center;
-}
 
 :root {
   --primary-color: rgb(52, 52, 52);
@@ -199,8 +53,9 @@ body, html {
   padding: 4rem 2rem;
   height: 110vh;
   font-size: 1.25rem;
-  
 }
+
+
 
 .section-headline {
   text-align: center;
@@ -211,10 +66,22 @@ body, html {
 
 .section-content {
   padding-bottom: 2rem;
-  display: flex;
+}
+
+@media (max-width: 420px) {
+  .section-content {
+    display: block;
+    background: red;
+  }
+}
+@media (min-width: 760px) {
+  .section-content {
+display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  }
 }
+
 
 .vito-img {
   object-fit: contain;
@@ -301,7 +168,6 @@ body, html {
 .course-img-container img {
   width: 30vw;
 }
-
 
 
 
