@@ -22,6 +22,11 @@ body, html {
   font-size: 3rem;
   font-weight: 500;
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
 
 /* Style tab links */
 .tablink {
@@ -49,7 +54,7 @@ body, html {
 .tabcontent {
   color: var(--primary-text-color);
   display: none;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   height: 110vh;
   font-size: 1.25rem;
   text-align: center;
@@ -102,7 +107,7 @@ body, html {
     display: none;
   }
   .tabcontent {
-    padding: 2rem 1rem;
+    padding: 6rem 1rem;
   }
   .section-content {
     flex-wrap: wrap;
