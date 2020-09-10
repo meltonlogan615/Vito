@@ -8,8 +8,8 @@
 <body>
   <h1 class="headline">Vital Purpose Coaching</h1>
 
-  <button class="tablink" onclick="openPage('about', this, 'black')" id="defaultOpen">About Me</button>
-<button class="tablink" onclick="openPage('vital-purpose', this, 'black')" >What Is Vital Purpose</button>
+  <button class="tablink" onclick="openPage('about', this, 'black')" id="defaultOpen">About <span class="clip">Me</span></button>
+<button class="tablink" onclick="openPage('vital-purpose', this, 'black')"><span class="clip">What Is </span><span class="clip">Vital </span>Purpose</button>
 <button class="tablink" onclick="openPage('Media', this, 'black')">Media</button>
 <button class="tablink" onclick="openPage('Course', this, 'black')">Course</button>
 <button class="tablink" onclick="openPage('Connect', this, 'black')">Connect</button>
@@ -73,14 +73,14 @@ These 4 simple steps are a great place to begin and are the same techniques I us
 <a href="https://ebook.vital-purpose.com " target="_blank"><button class="cta-btn">Download FREE E-Book</button></a>
 </div>
 <div class="media-img-container">
-  <img src="images/ebook.png" alt="">
+  <img src="images/ebook.png" alt="Beginner's Guide to Mastering Your Mindset" class="media-img">
 </div>
 </article>
 
 
 <article class="vital-points">
   <div class="media-img-container">
-    <img src="images/podcast.png" alt="">
+    <img src="images/podcast.png" alt="Getting Started Podcast. Hosted by Sean Bustard" class="media-img">
   </div>
   <div class="media-content">
   <h3 class="section-headline">Getting Started Podcast</h3>
@@ -99,7 +99,7 @@ These 4 simple steps are a great place to begin and are the same techniques I us
       <a href="https://go.vital-purpose.com/jumpstart" target="_blank"><button class="cta-btn">Find Out More</button></a>
     </div>
     <div class="course-img-container">
-      <img src="images/selfMastery.jpg">
+      <img src="images/selfMastery.jpg" alt="Self Mastery Jumpstart Course" class="course-img">
     </div>
     </article>
 </section>
@@ -107,7 +107,7 @@ These 4 simple steps are a great place to begin and are the same techniques I us
 <section id="Connect" class="tabcontent">
   <article class="vital-points">
     <div class="media-img-container">
-      <img src="/images/group.jpg" alt="">
+      <img src="/images/group.jpg" alt="Mindset Mastery for the rest of us" class="connect-img">
     </div>
     <div class="media-content">
   <h3 class="section-headline">Connect with Us on Facebook</h3>
@@ -122,7 +122,7 @@ These 4 simple steps are a great place to begin and are the same techniques I us
 
 <script>
   function openPage(pageName, elmnt, color) {
-
+  // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -135,11 +135,14 @@ These 4 simple steps are a great place to begin and are the same techniques I us
     tablinks[i].style.backgroundColor = "";
   }
 
+  // Show the specific tab content
   document.getElementById(pageName).style.display = "block";
 
+  // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
 }
 
+// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
 </body>
