@@ -45,7 +45,7 @@ body, html {
   font-size: 17px;
   font-weight: 300;
   width: 20%;
-  margin-top: 0;
+  margin: 0;
 }
 
 .tablink:hover {
@@ -70,6 +70,7 @@ body, html {
   border: 1px;
   border-color: var(--secondary-color);
   margin: 0 0.5rem;
+  cursor: pointer;
 }
 
 
