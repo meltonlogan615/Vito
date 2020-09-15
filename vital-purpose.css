@@ -1,8 +1,12 @@
 :root {
-  --primary-color: rgb(52, 52, 52);
+  --primary-color: rgb(0, 5, 21);
   --secondary-brand-color: rgb(191, 230, 240);
   --primary-text-color: rgb(164, 164, 164);
   --hover-state: rgb(245, 245, 245);
+  --logo-grey-dark: rgb(111, 112, 114);
+  --logo-grey-light: rgb(253, 253, 253);
+  --logo-blue-dark: rgb(0, 122, 200);
+  --logo-blue-light: rgb(0, 163, 241);
 }
 
 /* Set height of body and the document to 100% to enable "full page tabs" */
@@ -10,17 +14,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial;
-  background-color: #111;
-}
-
-.headline {
-  text-align: center;
-  padding: 1rem 0;
-  background: #444;
-  color: var(--secondary-brand-color);
-  margin: 0;
-  font-size: 3rem;
-  font-weight: 500;
+  background-color: var(--primary-color);
 }
 .header {
   position: fixed;
@@ -28,9 +22,22 @@ body, html {
   width: 100vw;
 }
 
+.headline {
+  text-align: center;
+  padding: 1rem 0;
+  background: var(--primary-color);
+  color: var(--secondary-brand-color);
+  margin: 0;
+}
+
+.banner-img {
+  width: 50%;
+  height: 10%;
+}
+
 /* Style tab links */
 .tablink {
-  background-color: #555;
+  background-color: var(--logo-grey-dark);
   color: white;
   float: left;
   border: none;
@@ -44,17 +51,33 @@ body, html {
 }
 
 .tablink:hover {
-  background-color: #777;
-}
-.tablink:focus {
-  background-color: #666
+  background-image: linear-gradient(90deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark))
 }
 
+
 /* Style the tab content (and add height:100% for full page content) */
+.empty-zone {
+  width: 100vw;
+  height: 10rem;
+}
+.social-section {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+}
+.social-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 5px;
+  background: var(--secondary-brand-color);
+  border: 1px;
+  border-color: var(--secondary-color);
+  margin: 0 0.5rem;
+}
+
 .tabcontent {
   color: var(--primary-text-color);
   display: none;
-  padding: 8rem 2rem;
+  padding: 1rem 2rem;
   height: 110vh;
   font-size: 1.25rem;
   text-align: center;
@@ -69,7 +92,7 @@ body, html {
 }
 
 .section-content {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -176,7 +199,7 @@ body, html {
 
 .media-content {
   text-align: center;
-  
+  padding: 0 1rem;
 }
 
 .media-headline {
@@ -187,10 +210,11 @@ body, html {
 .media-text {
   width: 45vw;
   padding-bottom: 1rem;
+  text-align: center;
 
 }
 .media-img-container {
-  width: 55vw;
+  width: 50vw;
   text-align: center; 
 }
 

@@ -2,12 +2,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="vital-purpose-tabs.css">
-  <title>Vital Purpose Coaching - Sticky</title>
+  <link rel="stylesheet" href="vital-purpose.css">
+  <title>Vital Purpose Coaching</title>
+  <style>
+
+  </style>
 </head>
 <body>
   <nav class="header">
-  <h1 class="headline">Vital Purpose Coaching</h1>
+    <div class="headline">
+      <img src="images/vital-purpose.png" class="banner-img">
+    </div>
 
   <button class="tablink" onclick="openPage('about', this, 'black')" id="defaultOpen">About <span class="clip">Me</span></button>
 <button class="tablink" onclick="openPage('vital-purpose', this, 'black')"><span class="clip">What Is </span><span class="clip">Vital </span>Purpose</button>
@@ -16,8 +21,9 @@
 <button class="tablink" onclick="openPage('Connect', this, 'black')">Connect</button>
 </nav>
 
+<!-- About Vito -->
 <section id="about" class="tabcontent">
-  <h3 class="section-headline">Who Am I?</h3>
+  <div class="empty-zone"></div>
     <div class="section-content">
       <div>
         <img src="/images/vito.jpg" class="vito-img">
@@ -37,8 +43,20 @@
         </p>
       </div>
     </div>
+    <!-- Social Media Buttons -->
+    <div class="social-section">
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg"></button></a>
+
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg"></button></a>
+
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg"></button></a>
+
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg"></button></a>
+    </div>
 </section>
 
+<!-- What is Vital Purpose -->
+<div class="empty-zone"></div>
 <section id="vital-purpose" class="tabcontent">
     <article class="vital-points">
       <div>
@@ -64,32 +82,70 @@
       </div>
       <img src="images/nlp-map.jpg" alt="" class="nlp-images">
     </article>
+          <div class="social-section">
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg"></button></a>
+
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg"></button></a>
+
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg"></button></a>
+
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg"></button></a>
+    </div>
 </section>
 
+<!-- Media Tab -->
 <section id="Media" class="tabcontent">
   <article class="vital-points">
-  <div class="media-content">
-  <h3 class="section-headline">The Beginner's Guide to Mastering Your Mindset</h3>
-  <p class="media-text">Grab a copy of my FREE ebook.
-These 4 simple steps are a great place to begin and are the same techniques I use daily.</p>
-<a href="https://ebook.vital-purpose.com " target="_blank"><button class="cta-btn">Download FREE E-Book</button></a>
-</div>
-<div class="media-img-container">
-  <img src="images/ebook.png" alt="Beginner's Guide to Mastering Your Mindset" class="media-img">
-</div>
-</article>
-
-
-<article class="vital-points">
-  <div class="media-img-container">
-    <img src="images/podcast.png" alt="Getting Started Podcast. Hosted by Sean Bustard" class="media-img">
+    <!-- Pod Cast -->
+    <div class="media-img-container">
+      <div>
+        <a class="spreaker-player" href="https://www.spreaker.com/show/the-getting-started-podcast_1" data-resource="show_id=4199216" data-width="100%" data-height="350px" data-theme="dark" data-playlist="show" data-playlist-continuous="false" data-autoplay="false" data-live-autoplay="false" data-chapters-image="true" data-episode-image-position="right" data-hide-logo="false" data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false" data-hide-download="true" data-cover="https%3A%2F%2Fd3wo5wojvuv7l.cloudfront.net%2Fimages.spreaker.com%2Foriginal%2F57cd80714aabc2e7061055673af84726.jpg">Listen to "The Getting Started Podcast" on Spreaker.</a><script async src="https://widget.spreaker.com/widgets.js"></script>
+    </div>
   </div>
-  <div class="media-content">
-  <h3 class="section-headline">Getting Started Podcast</h3>
-  <p class="media-text">I want to help you rise up, conquer and dominate this life we live. You were put here to be great and this podcast may just hold the spark that ignites your fire. Are you ready to break the 9-5 slave life cycle? Then tune in and listen up. We're just getting started!</p>
-  <a href="https://podcasts.apple.com/us/podcast/the-getting-started-podcast/id1503273463" target="_blank"><button class="cta-btn">Listen Now</button></a>
-  </div>
+
+    <div class="media-content">
+      <h3 class="section-headline">Getting Started Podcast</h3>
+      <p class="media-text">I want to help you rise up, conquer and dominate this life we live. You were put here to be great and this podcast may just hold the spark that ignites your fire. Are you ready to break the 9-5 slave life cycle? Then tune in and listen up. We're just getting started!</p>
+      <a href="https://podcasts.apple.com/us/podcast/the-getting-started-podcast/id1503273463" target="_blank"><button class="cta-btn">Listen Now</button></a>
+    </div>
   </article>
+  
+  
+  <article class="vital-points">
+    <!-- YouTube Player -->
+    <div class="media-content">
+      <h3 class="section-headline">Getting Stared on YouTube</h3>
+      <p class="media-text"> The podcast that inspires, empowers and encourages those who want more out of their life to get started NOW! With interviews from top entrepreneurs and business experts showcasing where they were when they got started, and how you can use their experiences to your advantage. If you're ready to live life by design and break the everyday slave life, then you've come to the right place. Come on in, we're just getting started!</p>
+        
+        <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="cta-btn">Watch On YouTube</button></a>
+      </div>
+      <div class="media-img-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLt0uGO9S-H_MFI_E6YvGFsFao29jsx_fi" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </article>
+
+  <article class="vital-points">
+    <div class="media-img-container">
+      <img src="images/ebook.png">
+    </div>
+    <div class="media-content">
+      <div>
+        <h3 class="section-headline">The Beginner's Guide to Mastering Your Mindset</h3>
+        <p class="media-text">Grab a copy of my FREE ebook.
+        These 4 simple steps are a great place to begin and are the same techniques I use daily.</p>
+        <a href="https://ebook.vital-purpose.com " target="_blank"><button class="cta-btn">Download FREE E-Book</button></a>
+      </div>
+    </div>
+  </article>
+      <div class="social-section">
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg"></button></a>
+
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg"></button></a>
+
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg"></button></a>
+
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg"></button></a>
+    </div>
 </section>
 
 <section id="Course" class="tabcontent">
@@ -104,6 +160,15 @@ These 4 simple steps are a great place to begin and are the same techniques I us
       <img src="images/selfMastery.jpg" alt="Self Mastery Jumpstart Course" class="course-img">
     </div>
     </article>
+          <div class="social-section">
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg"></button></a>
+
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg"></button></a>
+
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg"></button></a>
+
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg"></button></a>
+    </div>
 </section>
 
 <section id="Connect" class="tabcontent">
@@ -119,6 +184,15 @@ These 4 simple steps are a great place to begin and are the same techniques I us
   </a>
   </div>
   </article>
+      <div class="social-section">
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg"></button></a>
+
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg"></button></a>
+
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg"></button></a>
+
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg"></button></a>
+    </div>
 </section>
   
 
