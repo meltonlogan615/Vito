@@ -2,7 +2,6 @@
   --primary-color: rgb(0, 5, 21);
   --secondary-brand-color: rgb(191, 230, 240);
   --primary-text-color: rgb(164, 164, 164);
-  --hover-state: rgb(245, 245, 245);
   --logo-grey-dark: rgb(111, 112, 114);
   --logo-grey-light: rgb(253, 253, 253);
   --logo-blue-dark: rgb(0, 122, 200);
@@ -26,7 +25,6 @@ body, html {
   text-align: center;
   padding: 1rem 0;
   background: var(--primary-color);
-  color: var(--secondary-brand-color);
   margin: 0;
 }
 
@@ -68,11 +66,12 @@ body, html {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 5px;
-  background: var(--secondary-brand-color);
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
   border: 1px;
   border-color: var(--secondary-color);
   margin: 0 0.5rem;
 }
+
 
 .tabcontent {
   color: var(--primary-text-color);
@@ -88,7 +87,12 @@ body, html {
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  color: var(--secondary-brand-color);
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: contain;
 }
 
 .section-content {
@@ -116,9 +120,13 @@ body, html {
 .vital-points {
   display: flex;
   padding: 4rem 1.5rem 3rem 1.5rem;
-  border-bottom: 1px solid var(--secondary-brand-color);
+  border-bottom: 1px solid var(--logo-blue-light);
 }
 @media (max-width: 768px) {
+  .empty-zone {
+  width: 100vw;
+  height: 6rem;
+}
   .headline {
     font-size: 1.5rem;
   }
@@ -159,7 +167,7 @@ body, html {
   object-fit: contain;
   align-self: start; 
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .nlp-images {
     order: 2;
     text-align: center;
@@ -170,7 +178,7 @@ body, html {
 
 
 .cta-btn {
-  background: var(--secondary-brand-color);
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
   border-radius: 5px;
   border: 1px;
   border-color: var(--secondary-color);
@@ -185,7 +193,7 @@ body, html {
 }
 
 .cta-btn:hover{
-  background: var(--hover-state);
+  background: var(--secondary-brand-color);
   transition-duration: 600ms;
   border: none;
   cursor: pointer;
