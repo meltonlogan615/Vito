@@ -1,0 +1,655 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178116412-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', 'UA-178116412-1');
+</script>
+    <link rel="stylesheet" href="vital-purpose.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="/images/Vital Purpose Coaching-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Vital Purpose Coaching</title>
+    <style>
+      /* This is the place for all styling of the page */
+:root {
+  --primary-color: rgb(0, 5, 21);
+  --secondary-brand-color: rgb(191, 230, 240);
+  --primary-text-color: rgb(164, 164, 164);
+  --logo-grey-dark: rgb(111, 112, 114);
+  --logo-grey-light: rgb(253, 253, 253);
+  --logo-blue-dark: rgb(0, 122, 200);
+  --logo-blue-light: rgb(0, 163, 241);
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html, a {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color: var(--primary-color);
+  font-family: 'Raleway';
+  text-decoration: none;
+  color: var(--logo-blue-light);
+}
+q {
+  font-style: italic;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.headline {
+  text-align: center;
+  padding: 1rem 0;
+  background: var(--primary-color);
+  margin: 0;
+}
+
+.banner-img {
+  width: 50%;
+  height: 10%;
+}
+
+.tab-region {
+  background: var(--primary-color)
+}
+
+/* Style tab links */
+.tablink {
+  background: linear-gradient(180deg, var(--logo-grey-dark), var(--logo-grey-light), var(--logo-grey-dark));
+  color: var(--primary-color);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: 400;
+  width: 20%;
+  margin: 0;
+}
+
+.tablink:hover {
+  background: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
+  outline: 1px solid var(--primary-color)
+  transition-duration: 100ms;
+  
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.empty-zone {
+  width: 100vw;
+  height: 10rem;
+}
+.social-section {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+}
+.social-btn {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 5px;
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
+  border: 1px;
+  border-color: var(--secondary-color);
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light));
+}
+
+.tabcontent {
+  color: var(--primary-text-color);
+  display: none;
+  padding: 1rem 2rem;
+  height: 110vh;
+  font-size: 1.25rem;
+  text-align: center;
+  
+}
+
+.section-headline {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: contain;
+}
+
+.section-content {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.vito-img {
+  object-fit: contain;
+  width: 45vw;
+  border-radius: 10px;
+}
+
+.verbage {
+  display: block;
+  padding: 0 2rem;
+  
+}
+
+.verbage-text {
+  padding-bottom: 1.5rem;
+}
+
+.vital-points {
+  display: flex;
+  padding: 4rem 1.5rem 3rem 1.5rem;
+  border-bottom: 1px solid var(--logo-blue-light);
+}
+.article-link{
+  padding-top: 1rem;
+}
+@media (max-width: 980px) {
+  .clip {
+    display: none;
+  } 
+}
+@media (max-width: 768px) {
+  .empty-zone {
+  width: 100vw;
+  height: 4rem;
+}
+  .headline {
+    font-size: 1.5rem;
+  }
+  .tablink {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .tabcontent {
+    padding: 6rem 1rem;
+  }
+  .section-content {
+    flex-wrap: wrap;
+  }
+  .vito-img {
+    width: 65vw;
+    padding-bottom: 0.5rem;
+  }
+  .verbage {
+    padding: 0 1rem;
+  }
+  .verbage-text {
+    padding-bottom: 0rem;
+  }
+  .vital-points {
+    padding: 1rem;
+    flex-wrap: wrap;
+    order: 1;
+  }
+  
+}
+
+
+.nlp-images {
+  width: 45vw;
+  object-fit: contain;
+  align-self: start; 
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .nlp-images {
+    order: 2;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+}
+
+
+.cta-btn {
+  background-image: linear-gradient(0deg, var(--logo-blue-dark), var(--logo-blue-light), var(--logo-blue-dark));
+  border-radius: 10px;
+  border: 1px;
+  border-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+}
+
+.cta-btn a {
+  font-weight: semi-bold;
+  color: black;
+  text-decoration: none;
+}
+
+.cta-btn:hover{
+  background: linear-gradient(0deg, var(--logo-blue-light), var(--logo-blue-dark));
+  transition-duration: 100ms;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn a:hover {
+  border-bottom: none;
+  color: black;
+}
+
+.media-content {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.media-headline {
+  color: var(--secondary-brand-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.media-text {
+  width: 45vw;
+  padding-bottom: 1rem;
+  text-align: center;
+
+}
+.media-img-container {
+  width: 50vw;
+  text-align: center; 
+}
+
+.article-container {
+  border-bottom: 1px solid var(--logo-blue-light);
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 786px) {
+  .media-text {
+    width: auto;
+    order: 1;
+  }
+  .media-img-container {
+    order: 2;
+    padding: 1rem 0;
+    width: 100vw;
+    object-fit: contain;
+  }
+  .media-img {
+    width: 75vw;
+    border-radius: 10px;
+  }
+  .spreaker-player {
+    width: 90%;
+  }
+}
+.course-img-container {
+  padding: 1.5rem;
+  width: 50vw;
+  text-align: center; 
+}
+
+.course-img {
+  width: 30vw;
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+@media (max-width: 769px) {
+  .course-img-container {
+    width: 100vw;
+  }
+  .course-img {
+    width: 60vw;
+  }
+  .connect-img {
+    width: 70vw;
+  }
+}
+
+    </style>
+  </head>
+
+<body>
+<!-- Start Top Portion of Website (in publishing terms, Above the Fold, First Displayed.) -->
+
+  <nav class="header">
+
+<!-- Start Very, Very Top Portion, holding spot for the Logo-->
+    <div class="headline">
+      <img src="images/vital-purpose.png" alt="Vital Purpose Coaching"class="banner-img">
+    </div>
+<!-- End Very, Very Top Portion, holding spot for the Logo-->
+
+<!-- Start Tab Buttons-->
+    
+    <button class="tablink" onclick="openPage('about', this, 'rgb(0, 122, 200)')" id="defaultOpen">About <span class="clip">Me</span></button>
+    <button class="tablink" onclick="openPage('vital-purpose', this, 'rgb(0, 122, 200)')"><span class="clip">What Is Vital </span>Purpose</button>
+    <button class="tablink" onclick="openPage('Media', this, 'rgb(0, 122, 200)')">Media</button>
+    <button class="tablink" onclick="openPage('Course', this, 'rgb(0, 122, 200)')">Course</button>
+    <button class="tablink" onclick="openPage('Connect', this, 'rgb(0, 122, 200)')">Connect</button>
+<!-- End Tab Buttons-->
+  </nav>
+<!-- End Top Portion -->
+
+<!-- Start About Section -->
+<section id="about" class="tabcontent">
+  <div class="empty-zone"></div>
+    <div class="section-content">
+<!-- Start Container for Images -->
+      <div>
+        <img src="/images/vito.jpg" alt="Sean Bustard, Founder of Vital Purpose Coaching" class="vito-img">
+      </div>
+<!-- End Container for Images -->
+
+<!-- Start Text Explaining your journey -->
+
+<!-- To add Italics or Bold, add <em>words...</em> tags around the respective text for italics, and <strong>words...</strong> for bold --> 
+
+      <div class="verbage">
+  <!-- Start Paragraph One -->
+        <p class="verbage-text">
+          My name is Sean Bustard and I specialize in helping men and fathers rediscover their purpose and let go of limiting beliefs, even after finding stability and building families. Through the powerful tools of NLP and Matrix Therapies we're able to clear out negative emotions and influences and step into the power that resides within each of us.
+        </p>
+<!-- End Paragraph One -->
+
+<!-- Start Paragraph Two -->
+        <p class="verbage-text">
+          As a husband and father of 4, I understand that life can get chaotic and appear to be out of control. Let me assure you that even when life is like a tornado, you can always find the eye of the storm and that there is always a calm place to focus and set a plan into motion that will allow you to have more control over your life.
+        </p>
+<!-- End Paragraph Two -->
+
+<!-- Start Paragraph Three -->
+        <p class="verbage-text">
+          I have overcome extreme challenges to get where I am today including an intensely dysfunctional childhood, a multitude of mental health issues and a 10 year drug addiction - all by rewiring and reworking my mindset and conquering the obstacles I am faced with.
+        </p>
+<!-- End Paragraph Three -->
+
+<!-- Start Paragraph Four -->
+        <p class="verbage-text">
+          My previous experience in the work force as a salesman, customer service rep and construction lead have honed and polished my leadership and communication skills and I am confident that I can help you as well.
+        </p>
+<!-- End Paragraph Four -->
+      </div>
+<!-- End Text Explaining your journey -->
+    </div>
+<!-- End Your Personal Journey -->
+
+<!-- Start Social Media Buttons -->
+    <div class="social-section">
+<!-- Facebook -->
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg" alt="Vital Purpose Coaching on Facebook"></button></a>
+
+<!-- Instagram -->
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg" alt="Vital Purpose on Instagram"></button></a>
+
+<!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg" alt="Vital Purpose on LinkedIn"></button></a>
+
+<!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg" alt="Vital Purpose Coaching, The Getting Started Podcast on YouTube"></button></a>
+    </div>
+<!-- End Social Media Buttons -->
+
+</section>
+<!-- End About Section -->
+
+<!-- Start About Vital Purpose -->
+<section id="vital-purpose" class="tabcontent">
+  <div class="empty-zone"></div>
+  <article class="vital-points">
+    <div>
+      <h3 class="section-headline">Removing Limiting Beliefs</h3>
+      <p class="verbage">Our unconscious mind is programmed with limiting beliefs. These limiting beliefs serve a purpose within our unconscious mind and trigger our thought patterns and behaviors of self sabotage. We can eliminate these limiting beliefs and replace them with new, empowering beliefs that change our perception of previous mental blocks.</p>
+    </div>
+    <img src="images/nlp-top.jpeg" alt="" class="nlp-images">
+  </article>
+
+  <article class="vital-points">
+    <img src="/images/nlp-activity.jpg" alt="" class="nlp-images">
+    <div>
+      <h3 class="section-headline">Be Your Best Self</h3>
+      <p class="verbage">Life is full of opportunities, and it is my job to help you figure out which opportunities to take advantage of in order to live the life you want.</p>
+    </div>
+  </article>
+
+  <article class="vital-points">
+    <div>
+      <h3 class="section-headline">Live Your Dreams</h3>
+      <p class="verbage">When you choose to live a dream, you need a plan to make it come true. We will work together to set a series of actionable goals and strategies to get you where you want to be.</p>
+    </div>
+    <img src="images/nlp-map.jpg" alt="" class="nlp-images">
+  </article>
+<!-- Start Social Media Buttons -->
+    <div class="social-section">
+<!-- Facebook -->
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg" alt="Vital Purpose Coaching on Facebook"></button></a>
+
+<!-- Instagram -->
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg" alt="Vital Purpose on Instagram"></button></a>
+
+<!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg" alt="Vital Purpose on LinkedIn"></button></a>
+
+<!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg" alt="Vital Purpose Coaching, The Getting Started Podcast on YouTube"></button></a>
+    </div>
+<!-- End Social Media Buttons -->
+</section>
+<!-- End About Vital Purpose -->
+
+<!-- Start Media Tab -->
+<section id="Media" class="tabcontent">
+<!-- Start Podcast -->
+<div class="empty-zone"></div>
+  <article class="vital-points">
+    <div class="media-img-container">
+      <div>
+        <a class="spreaker-player" href="https://www.spreaker.com/show/the-getting-started-podcast_1" data-resource="show_id=4199216" data-width="100%" data-height="350px" data-theme="dark" data-playlist="show" data-playlist-continuous="false" data-autoplay="false" data-live-autoplay="false" data-chapters-image="true" data-episode-image-position="right" data-hide-logo="false" data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false" data-hide-download="true" data-cover="https%3A%2F%2Fd3wo5wojvuv7l.cloudfront.net%2Fimages.spreaker.com%2Foriginal%2F57cd80714aabc2e7061055673af84726.jpg">Listen to "The Getting Started Podcast" on Spreaker.</a><script async src="https://widget.spreaker.com/widgets.js"></script>
+    </div>
+  </div>
+
+    <div class="media-content">
+      <h3 class="section-headline">Getting Started Podcast</h3>
+      <p class="media-text">I want to help you rise up, conquer and dominate this life we live. You were put here to be great and this podcast may just hold the spark that ignites your fire. Are you ready to break the 9-5 slave life cycle? Then tune in and listen up. We're just getting started!</p>
+      <a href="https://podcasts.apple.com/us/podcast/the-getting-started-podcast/id1503273463" target="_blank"><button class="cta-btn">Listen Now</button></a>
+    </div>
+  </article>
+<!-- End Podcast -->
+  
+<!-- Start YouTube Player -->
+  <article class="vital-points">
+    <div class="media-content">
+      <h3 class="section-headline">Getting Stared on YouTube</h3>
+      <p class="media-text"> The podcast that inspires, empowers and encourages those who want more out of their life to get started NOW! With interviews from top entrepreneurs and business experts showcasing where they were when they got started, and how you can use their experiences to your advantage. If you're ready to live life by design and break the everyday slave life, then you've come to the right place. Come on in, we're just getting started!</p>
+        
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="cta-btn">Watch On YouTube</button></a>
+    </div>
+    <div class="media-img-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLt0uGO9S-H_MFI_E6YvGFsFao29jsx_fi" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </article>
+<!-- End YouTube Player -->
+
+<!-- Start Ebook -->
+  <article class="vital-points">
+    <div class="media-img-container">
+      <img src="images/ebook.png" alt="The Beginner's Guide to Mastering Your Mindset">
+    </div>
+    <div class="media-content">
+      <div>
+        <h3 class="section-headline">The Beginner's Guide to Mastering Your Mindset</h3>
+        <p class="media-text">Grab a copy of my FREE ebook.
+        These 4 simple steps are a great place to begin and are the same techniques I use daily.</p>
+        <a href="https://ebook.vital-purpose.com " target="_blank"><button class="cta-btn">Download FREE E-Book</button></a>
+      </div>
+    </div>
+  </article>
+<!-- End Ebook -->
+
+<!-- Start Articles -->
+    <article class="vital-points">
+      <div class="media-content">
+        <h3 class="section-headline">Articles</h3>
+        <div class="media-text">
+          <div class="article-container">
+        <h4><a href="https://goodmenproject.com/featured-content/3-steps-to-quickly-overcome-panic-and-overwhelming-stress-kcon/">3 Steps to Quickly Overcome Panic and Overwhelming Stress</a></h4>
+        <q> Here are three simple tips to help you quickly move from panic and overwhelm to feeling back in control of your life. </q>
+        <div class="article-link"><a href="https://goodmenproject.com/featured-content/3-steps-to-quickly-overcome-panic-and-overwhelming-stress-kcon/" target="_blank" >Read More</a></div>
+        </div>
+
+        <div class="article-container">
+        <h4><a href="https://goodmenproject.com/business-ethics-2/leadership-2/why-men-to-find-their-purpose-now-more-than-ever-kcon/" target="_blank">Why Men to Need Find Their Purpose, Now More Than Ever</a></h4>
+        <q> To discover our purpose is to give our lives infinite meaning. </q>
+        <div class="article-link"><a href="https://goodmenproject.com/business-ethics-2/leadership-2/why-men-to-find-their-purpose-now-more-than-ever-kcon/" target="_blank" >Read More</a></div>
+        </div>
+        <div class="article-container">
+        <h4><a href="https://addicted2success.com/life/heres-why-we-fall-into-self-sabotage-when-things-are-going-so-well/" target="_blank">Here’s Why We Fall Into Self Sabotage When Things Are Going So Well</a></h4>
+        <q> Self-sabotage manifests itself in subtle and often disruptive patterns of behavior that we don’t automatically recognize or see. </q>
+        <div class="article-link"><a href="https://addicted2success.com/life/heres-why-we-fall-into-self-sabotage-when-things-are-going-so-well/" target="_blank" >Read More</a></div>
+      </div>
+      </div>
+        
+      </div>
+      <div class="media-img-container">
+      <img src="images/lean.jpg" alt="The Beginner's Guide to Mastering Your Mindset">
+    </div>
+    </article>
+    <!-- End Articles -->
+
+<!-- Start Social Media Buttons -->
+    <div class="social-section">
+<!-- Facebook -->
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg" alt="Vital Purpose Coaching on Facebook"></button></a>
+
+<!-- Instagram -->
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg" alt="Vital Purpose on Instagram"></button></a>
+
+<!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg" alt="Vital Purpose on LinkedIn"></button></a>
+
+<!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg" alt="Vital Purpose Coaching, The Getting Started Podcast on YouTube"></button></a>
+    </div>
+<!-- End Social Media Buttons -->
+</section>
+<!-- End Media Tab -->
+
+<!-- Start Course Tab-->
+<section id="Course" class="tabcontent">
+  <div class="empty-zone"></div>
+  <article class="vital-points">
+    <div class="media-content">
+      <h3 class="section-headline">Self Mastery Jumpstart</h3>
+      <p class="media-text">This is a 7 Day crash course I designed to allow <strong>ANYONE</strong> to begin mastering the different elements of their life. Being able to conquer and master even the simplest of things will set you up for success in business, relationships and life...and it's not as hard to do as you might think. And its <em>100% FREE!</em>
+      </p>
+      <a href="https://go.vital-purpose.com/jumpstart" target="_blank"><button class="cta-btn">Find Out More</button></a>
+    </div>
+    <div class="course-img-container">
+      <img src="images/selfMastery.jpg" alt="Self Mastery Jumpstart Course" class="course-img">
+    </div>
+    </article>
+
+
+
+<!-- Start Social Media Buttons -->
+    <div class="social-section">
+<!-- Facebook -->
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg" alt="Vital Purpose Coaching on Facebook"></button></a>
+
+<!-- Instagram -->
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg" alt="Vital Purpose on Instagram"></button></a>
+
+<!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg" alt="Vital Purpose on LinkedIn"></button></a>
+
+<!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg" alt="Vital Purpose Coaching, The Getting Started Podcast on YouTube"></button></a>
+    </div>
+<!-- End Social Media Buttons -->
+</section>
+
+<!-- Start Connect Tab -->
+<section id="Connect" class="tabcontent">
+  <div class="empty-zone"></div>
+  <article class="vital-points">
+    <div class="media-img-container">
+      <img src="/images/group.jpg" alt="Mindset Mastery for the rest of us" class="connect-img">
+    </div>
+    <div class="media-content">
+      <h3 class="section-headline">Connect with Us on Facebook</h3>
+      <p class="media-text">Join the Facebook group where we share daily tips, tricks and tools to help you improve your mindset and grow into your full potential.</p>
+      <a href="https://www.facebook.com/groups/mindsetmasteryfortherestofus" target="_blank">
+        <button class="cta-btn">Facebook Group</button>
+      </a>
+    </div>
+  </article>
+  
+
+  <article  class="vital-points">
+    <div class="media-content">
+    <h3 class="section-headline">Book a Call</h3>
+    <p class="media-text">I want to help you find your one true purpose that's vital to your life, freedom & survival.</p>
+    <p class="media-text">Rediscover Your Vital Purpose and Live Life by Design</p>
+    <a href="https://msgsndr.com/widget/booking?calendar=rFo1y6KHkF7sIU8152ZG" target="_blank"><button class="cta-btn">Schedule Now</button></a>
+  </div>
+  <div class="media-img-container">
+    <img src="images/Vital Purpose Coaching-logo.png" class="course-img">
+  </div>
+  </article>
+<!-- Start Social Media Buttons -->
+    <div class="social-section">
+<!-- Facebook -->
+      <a href="https://www.facebook.com/vitalpurposecoaching" target="_blank"><button class="social-btn"><img src="images/facebook.svg" alt="Vital Purpose Coaching on Facebook"></button></a>
+
+<!-- Instagram -->
+      <a href="https://www.instagram.com/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/instagram.svg" alt="Vital Purpose on Instagram"></button></a>
+
+<!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/theseanbustard/" target="_blank"><button class="social-btn"><img src="images/linkedin.svg" alt="Vital Purpose on LinkedIn"></button></a>
+
+<!-- YouTube -->
+      <a href="https://www.youtube.com/channel/UCcCSJRyroBgjDoPmGg32nKg" target="_blank"><button class="social-btn"><img src="images/youtube.svg" alt="Vital Purpose Coaching, The Getting Started Podcast on YouTube"></button></a>
+    </div>
+<!-- End Social Media Buttons -->
+</section>
+  
+
+<script>
+  function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
